@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculadora de TMB</title>
+  </head>
+  <body>
+    <div class="calculadora">
+      <h3>Calculadora</h3>
+      <i class="bx bx-calculator"></i>
+    </div>
+    <div class="taxa">
+      <h2>Taxa Metabólica Basal</h2>
+    </div>
+    <form id="formTMB">
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" required /><br />
+
+      <label for="altura">Altura (cm):</label>
+      <input type="number" id="altura" required /><br />
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" required /><br />
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" required>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option></select
+      ><br />
+
+      <label for="nivelAtividade">Nível de Atividade:</label>
+      <select id="nivelAtividade" required>
+        <option value="sedentario">Sedentário</option>
+        <option value="levementeAtivo">Levemente Ativo</option>
+        <option value="moderadamenteAtivo">Moderadamente Ativo</option>
+        <option value="muitoAtivo">Muito Ativo</option>
+        <option value="extremamenteAtivo">Extremamente Ativo</option></select
+      ><br />
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="modal" class="modal">
+      <div class="modal-content" id="modal-content">
+        <h3 id="resultado"></h3>
+        <h3 id="agua"></h3>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
