@@ -50,8 +50,8 @@ document.getElementById("formTMB").addEventListener("submit", function(event) {
     const resultado = calcularTMB(peso, altura, idade, sexo, nivelAtividade);
     const ingestaoAgua = calcularIngestaoAgua(peso);
     
-    document.getElementById("resultado").textContent = `Gasto calórico diário estimado: ${resultado.toFixed(2)} kcal`;
-    document.getElementById("agua").textContent = `Ingestão ideal de água: ${ingestaoAgua.toFixed(2)} litros por dia`;
+    document.getElementById("resultado").textContent = `Gasto calórico diário: ${resultado.toFixed(2)} kcal`;
+    document.getElementById("agua").textContent = `Qtnd de água: ${ingestaoAgua.toFixed(2)} litros por dia`;
     
     document.getElementById("modal").style.display = "flex";
 });
