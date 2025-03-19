@@ -51,7 +51,7 @@ document.getElementById("formTMB").addEventListener("submit", function(event) {
     const ingestaoAgua = calcularIngestaoAgua(peso);
     
     document.getElementById("resultado").textContent = `Gasto calórico diário: ${resultado.toFixed(2)} kcal`;
-    document.getElementById("agua").textContent = `Qtnd de água:<br> ${ingestaoAgua.toFixed(2)} L por dia`;
+    document.getElementById("agua").textContent = `Quantidade de água: ${ingestaoAgua.toFixed(2)} L por dia`;
     
     document.getElementById("modal").style.display = "flex";
 });
